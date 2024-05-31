@@ -239,12 +239,6 @@ input[type="checkbox"] {
     padding: 0.5rem 2rem;
     width: calc(100vw - 5rem);
   }
-  .card li {
-    justify-self: start;
-  }
-  .buttons {
-    justify-self: end;
-  }
   .danger,
   .editBtn {
     font-size: 0.5rem;
@@ -265,7 +259,25 @@ input[type="checkbox"] {
     height: 10px;
   }
 
+  .card .editText{
+    width: 150px;
+  }
+
   .submitBtn {
+    font-size: 0.6rem;
+  }
+}
+
+
+@media (max-width:275px){
+  *{
+    font-size: 0.6rem;
+  }
+  .card .editText {
+    width: 100px;
+  }
+
+  .btn{
     font-size: 0.6rem;
   }
 }
