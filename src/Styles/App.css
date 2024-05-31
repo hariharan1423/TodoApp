@@ -68,6 +68,7 @@ body {
 }
 
 .editText {
+  width: 35%;
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
@@ -137,6 +138,7 @@ body {
   font-weight: 600;
   align-self: center;
   justify-self: start;
+  width: 100%;
 }
 
 input[type="checkbox"] {
@@ -160,7 +162,9 @@ input[type="checkbox"] {
 }
 .edit {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: start;
+  gap: 2px;
 }
 .submitBtn {
   font-size: 1rem;
@@ -259,10 +263,6 @@ input[type="checkbox"] {
     height: 10px;
   }
 
-  .card .editText{
-    width: 150px;
-  }
-
   .submitBtn {
     font-size: 0.6rem;
   }
@@ -273,10 +273,6 @@ input[type="checkbox"] {
   *{
     font-size: 0.6rem;
   }
-  .card .editText {
-    width: 100px;
-  }
-
   .btn{
     font-size: 0.6rem;
   }
