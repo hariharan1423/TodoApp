@@ -25,7 +25,7 @@ export default function ListItem({ todo, setTodoList, handleSubmit }) {
           };
         }
         return todo;
-      });
+      }).sort((a, b) => a.completed - b.completed);
     });
   }
 

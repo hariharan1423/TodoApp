@@ -3,7 +3,6 @@ import FormComponent from "./FormComponent";
 import ListItems from "./ListItems";
 
 export default function WrapperComponent() {
-  
   const [titleName, setTitleName] = useState("");
   const [error, setError] = useState(false);
   const [todoList, setTodoList] = useState(() => {
@@ -67,11 +66,12 @@ export default function WrapperComponent() {
         editCount: 0,
       };
       setTodoList((currentList) => {
-        return [...currentList, listDetails];
+        return [listDetails, ...currentList];
       });
       setTitleName("");
     }
   }
+
   return (
     <>
       <FormComponent
@@ -79,6 +79,7 @@ export default function WrapperComponent() {
         titleName={titleName}
         error={error}
         setTitleName={setTitleName}
+
       ></FormComponent>
       <ListItems
         todoList={todoList}
