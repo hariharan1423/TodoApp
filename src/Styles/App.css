@@ -221,7 +221,22 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 440px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "input input" "details buttons";
+  }
+  .card li{
+    grid-area: input;
+  }
+
+  .details{
+    grid-area: details;
+    font-size: 0.8rem;
+  }
+
   .buttons {
+    grid-area: buttons;
     flex-direction: column;
     align-items: end;
     gap: 20px;
